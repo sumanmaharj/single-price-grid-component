@@ -1,0 +1,121 @@
+:root{
+    --theme-color:#2bb3b1;
+    --theme-color-light:#4abebd;
+    --color: #bfdf32;
+    --gray: #f0f0f0;
+    --text-color: #b5b8bf;
+    --base-font-size: 14px;
+    --font-family: 'Karla', sans-serif;
+
+}
+body{
+    background-color: var(--gray);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    font-weight: 500;
+}
+.bg-white{
+    background-color: #fff;
+}
+.bg-primary{
+    background-color: var(--theme-color);
+}
+.bg-primary--light{
+    background-color: var(--theme-color-light);
+}
+.text-primary{
+    color: var(--theme-color);
+}
+.text-color{
+    color: var(--color);
+}
+.text-white{
+    color: #fff;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+ul li{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/*
+ Button 
+*/
+.button{
+    padding:15px 50px;
+    background-color: var(--color);
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.content-wrap{
+    border-radius: 5px;
+    margin:0 auto;
+    max-width: 300px;
+}
+.content-wrap .content{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.content-wrap .content-block{
+    padding: 25px;
+}
+.content-wrap .content-block.content-half{
+    color: rgba(255,255,255,0.5);
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price span{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-right: 10px;
+}
+@media only screen and (min-width:767px){
+    .content-wrap{
+        max-width: 700px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .content-wrap .content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-wrap .content-block{
+        padding: 35px;
+    }
+    .content-wrap .content-block.content-full{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .content-wrap .content-block.content-half{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+
